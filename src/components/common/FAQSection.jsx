@@ -10,7 +10,7 @@ export default function FAQSection({ title = 'Frequently asked questions', items
   const [openId, setOpenId] = useState(items[0]?.id)
 
   return (
-    <section className="container-page py-20">
+    <section id="faq" className="container-page scroll-mt-24 py-20">
       <div className="grid gap-10 lg:grid-cols-[380px_1fr] lg:gap-16">
         <SectionHeading
           eyebrow="FAQ"

@@ -4,6 +4,7 @@ const VARIANTS = {
   accent: 'bg-accent text-ink hover:brightness-95',
   dark: 'bg-ink text-white hover:bg-ink-soft',
   outline: 'border border-ink/15 text-ink hover:border-ink/40',
+  'outline-light': 'border border-white/30 text-white hover:border-white/60',
 }
 
 /** Универсальная кнопка/ссылка: жёлтая (accent) по умолчанию — под CTA из макета. */

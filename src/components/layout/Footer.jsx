@@ -26,7 +26,9 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
-          <span className="font-heading text-xl font-bold">Agency</span>
+          <span className="font-heading text-xl font-bold">
+            <span className="text-accent">{'{'}</span>Finsweet
+          </span>
           <div className="flex flex-wrap gap-16">
             {FOOTER_COLUMNS.map(({ title, links }) => (
               <div key={title} className="flex flex-col gap-3">
@@ -42,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/50 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Agency. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Finsweet. All rights reserved.</p>
           <div className="flex gap-4">
             {/* TODO: иконки соцсетей */}
             <a href="#">Twitter</a>

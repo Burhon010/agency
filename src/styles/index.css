@@ -51,6 +51,30 @@
   }
 }
 
+/* Парящие иконки в Home Hero — у каждой своя амплитуда/длительность/задержка для живого эффекта. */
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.hero-float {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: float-y var(--float-duration, 4s) ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-float {
+    animation: none;
+  }
+}
+
 @utility container-page {
   width: 100%;
   max-width: 1280px;

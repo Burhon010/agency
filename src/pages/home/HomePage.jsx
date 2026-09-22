@@ -1,20 +1,25 @@
-import PagePlaceholder from '@/components/common/PagePlaceholder'
+import HeroSection from './components/HeroSection'
+import HowWeWork from './components/HowWeWork'
+import OurProjects from './components/OurProjects'
+import FeaturesGrid from './components/FeaturesGrid'
+import Testimonial from './components/Testimonial'
+import BlogPreview from './components/BlogPreview'
+import FAQSection from '@/components/common/FAQSection'
+import PromoBanner from '@/components/common/PromoBanner'
+import { homeFaq } from '@/data/home'
 
 /** / — Home (Figma: Home). */
 export default function HomePage() {
   return (
-    <PagePlaceholder
-      title="Home"
-      sections={[
-        'Hero — заголовок, CTA, иллюстрация интерфейса',
-        'How we work — карточки этапов (Strategy, Wireframing, Design, Development)',
-        'View our projects — 2 карточки проектов',
-        'Design that solves problems — сетка из 6 карточек-преимуществ',
-        'Отзыв клиента — цитата, аватар, имя',
-        'FAQ — аккордеон',
-        'Промо-баннер «Lets build something great together»',
-        'Our blog — 3 карточки постов',
-      ]}
-    />
+    <div className="flex flex-col">
+      <HeroSection />
+      <HowWeWork />
+      <OurProjects />
+      <FeaturesGrid />
+      <Testimonial />
+      <FAQSection items={homeFaq} />
+      <PromoBanner />
+      <BlogPreview />
+    </div>
   )
 }

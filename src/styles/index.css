@@ -3,11 +3,11 @@
 /* Цветовая схема по макету: тёмно-синий (почти чёрный) — шапка/футер/промо,
    светлый фон — основной контент, жёлтый — акцент CTA, синий — выделенные карточки. */
 @theme {
-  --color-ink: #282938;
-  --color-ink-soft: #34364a;
+  --color-ink: #1c1e53;
+  --color-ink-soft: #34366e;
   --color-surface: #ffffff;
   --color-surface-muted: #f5f5f7;
-  --color-accent: #ffb800;
+  --color-accent: #fcd980;
   --color-accent-blue: #4d5bf9;
 
   --font-heading: 'Inter', system-ui, sans-serif;

@@ -1,4 +1,3 @@
-import heroMockup from '@/assets/images/agency/hero-mockup.jpg'
 import project1 from '@/assets/images/agency/project-1.jpg'
 import project2 from '@/assets/images/agency/project-2.jpg'
 import testimonial from '@/assets/images/agency/testimonial.jpg'
@@ -8,10 +7,8 @@ import blog3 from '@/assets/images/agency/blog-3.jpg'
 import { StrategyIcon, WireframeIcon, DesignIcon, DevelopmentIcon, GoalIcon, TeamIcon, QualityIcon, SupportIcon, DeliveryIcon, CheckIcon } from '@/components/ui/icons'
 
 export const heroContent = {
-  eyebrow: 'Digital / design agency',
   title: 'Building stellar websites for early startups',
-  text: 'Мы помогаем молодым продуктам запускаться быстро и выглядеть дорого: стратегия, дизайн и разработка в одной команде.',
-  image: heroMockup,
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
 }
 
 export const howWeWork = [

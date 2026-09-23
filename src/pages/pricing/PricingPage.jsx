@@ -1,15 +1,17 @@
-import PagePlaceholder from '@/components/common/PagePlaceholder'
+import PricingHero from './components/PricingHero'
+import PricingCards from './components/PricingCards'
+import FAQSection from '@/components/common/FAQSection'
+import PromoBanner from '@/components/common/PromoBanner'
+import { pricingFaq } from '@/data/pricing'
 
 /** /pricing — Pricing (Figma: Pricing). */
 export default function PricingPage() {
   return (
-    <PagePlaceholder
-      title="Our Pricing Plans"
-      sections={[
-        '3 карточки тарифов в ряд, средняя — выделена синей обводкой',
-        'FAQ — аккордеон',
-        'Промо-баннер',
-      ]}
-    />
+    <div className="flex flex-col">
+      <PricingHero />
+      <PricingCards />
+      <FAQSection title="Frequently asked questions" items={pricingFaq} />
+      <PromoBanner />
+    </div>
   )
 }
